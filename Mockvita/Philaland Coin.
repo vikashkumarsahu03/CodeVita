@@ -1,0 +1,14 @@
+public class Mock {
+    public static void main(String [] args){
+        int n=5;
+        System.out.println(mincoin(10));
+
+    }
+    static int mincoin(int n){
+        if(n==0){
+            return 0;
+
+        }
+        return ((int)(Math.log(n)/Math.log(2))+1);
+    }
+    }
